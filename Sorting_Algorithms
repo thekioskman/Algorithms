@@ -1,44 +1,6 @@
 #Sorting algorithms: Bubble, Selection, Insertion, Merge 
 
 
-list_1 = [1,23,32,4523,4,2345,23,4213,4,143]
-list_1.sort()
-#Linear Search 
-def lin_search(list_1, target):
-  '''
-  Searches for a target value in a given list, if the value DNE in the list returns -1 
-  param: list, int
-  return: index target or -1 
-  '''
-  for i in range(len(list_1)):
-    if list_1[i] == item:
-      return i
-  return -1
-
-#Binary Search
-list_1.sort()
-list_1 = [1,23,32,4523,4,2345,23,4213,4,143]
-def bin_search(list_1, target):
-  '''
-  Searches for a target value in a given SORTED  list, if the value DNE in the list returns -1 
-  param: list, int
-  return: index target or -1 
-  '''
-  start = 0 
-  end = len(list_1)
-
-  while True: 
-    if list_1[(start+end)//2] == target:
-      return ((start+end)//2)
-    elif start+1 == end:
-      return -1
-    elif list_1[(start+end)//2] > target:
-      
-      end = (start+end)//2 
-    else:
-      start = (start+end)//2
-
-
 #Bubble sort
 list_1 = [1,23,32,4523,4,2345,23,4213,4,143]
 def bubble_sort(list_1):
