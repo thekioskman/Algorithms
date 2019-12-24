@@ -8,7 +8,8 @@
 
 data = [1,2,3,4,5,6,7,8,9]
 
-#every elements starts off being its own parent, therefore the index of the parent is -1, the parent array will give the index of the parent. Therfore, parent[i] will return the parent of the i'th value from the data array  
+#every elements starts off being its own parent, therefore the index of the parent is -1, the parent array will give the index of the parent. 
+#Therfore, parent[i] will return the parent of the i'th value from the data array  
 parent = [-1] * 9
 
 
@@ -48,7 +49,8 @@ print(find1(data.index(1)))
 #Dictionary repersentation 
 
 
-#Each element which exists as a key, will be mapped to a parent so we can just find the parent by calling the dic[element], therefore we can just have the elements themselves repersent the parents as opposed to having the parents be repersent by indexes 
+#Each element which exists as a key, will be mapped to a parent so we can just find the parent by calling the dic[element]
+#Therefore we can just have the elements themselves repersent the parents as opposed to having the parents be repersent by indexes 
 
 parent2 = {x:x for x in range(1,10)}
 
